@@ -1,5 +1,9 @@
 server:
   port: 9000
+  tomcat:
+    accesslog:
+      enabled: true
+    basedir: build/tomcat
 spring:
   profiles: production
 logging:
