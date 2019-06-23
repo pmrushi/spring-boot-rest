@@ -7,7 +7,12 @@ Spring boot sample application.
 ./gradlew bootRun
 
 ### QA
-./gradlew bootRun -Dspring.profiles.active=qa
+./gradlew bootRun --args=--spring.profiles.active=qa
 
 ### Production
-./gradlew bootRun -Dspring.profiles.active=production
+./gradlew bootRun --args=--spring.profiles.active=production
+
+
+### Download JAVA 12
+
+https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html

@@ -7,7 +7,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.pmr'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = JavaVersion.VERSION_12
 
 repositories {
     mavenCentral()
@@ -22,10 +22,6 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
         exclude group: 'junit', module: 'junit'
     }
-}
-
-bootRun { 
-    systemProperties = System.properties
 }
 
 test {
