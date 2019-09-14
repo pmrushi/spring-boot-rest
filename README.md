@@ -12,6 +12,9 @@ Spring boot sample application.
 ### Production
 ./gradlew bootRun --args=--spring.profiles.active=production
 
+### Upgrade Gradle
+
+./gradlew wrapper --gradle-version 5.6.2
 
 ### Download JAVA 12
 
