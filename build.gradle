@@ -1,9 +1,9 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.0.BUILD-SNAPSHOT'
+    id 'org.springframework.boot' version '2.1.9.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
+    id 'checkstyle'
 }
-
-apply plugin: 'io.spring.dependency-management'
 
 group = 'com.pmr'
 version = '0.0.1-SNAPSHOT'
@@ -22,8 +22,13 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
         exclude group: 'junit', module: 'junit'
     }
+    compile 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
 }
 
 test {
     useJUnitPlatform()
+}
+
+checkstyle {
+    toolVersion = '8.25'
 }
