@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
     id 'checkstyle'
+    id 'pmd'
 }
 
 group = 'com.pmr'
@@ -31,4 +32,11 @@ test {
 
 checkstyle {
     toolVersion = '8.25'
+}
+
+pmd {
+    toolVersion = '6.18.0'
+    ignoreFailures = true
+    ruleSetFiles = files('config/pmd/ruleset.xml')
+    ruleSets = []
 }
